@@ -1,0 +1,776 @@
+*{
+
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    
+    background: linear-gradient(to top, rgb(23, 23, 23) , rgb(55, 16, 16));
+}
+.overlay1{
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgb(23, 23, 23) , rgb(56, 18, 20));
+    position: absolute;
+    width: 210vh;
+    height: 84px;
+}
+.navibar{
+    width: 100%;
+    height: 84px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+   
+}
+
+.netflixbox{
+    height: 40px;
+    width: 455.325px;
+    margin-left: 16px;   
+}
+.signinbox{
+    height: 40px;
+    width: 990px;
+      
+}
+.logo svg{
+    width:148px;
+    height: 40px;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+}
+.select select{
+    background-color: aliceblue;
+    width: 123.6px;
+    height: 32px;
+    border-radius: 20px;
+    Display: block;
+  margin-left: 10px;
+    text-align: center;
+    background: transparent;
+    color: white;
+   
+   
+}
+.select{
+    position: absolute;
+    top: 28px;
+    right: 150px;
+    z-index: 2;
+   
+}
+.langsym svg{
+    position: absolute;
+    right: 248px;
+    top:34px ;
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+    z-index: 3;
+    color: white;
+}
+.signupbtn{
+  padding: 5px;
+  border-radius: 20px;
+  width: 80px;
+  position: absolute;
+    top: 28px;
+ right: 45px;
+
+ background-color: white;
+ color: black;
+ border: none;
+
+}
+.signupbtn:hover{
+    background-color: rgb(211, 202, 202);
+    cursor: pointer;
+}
+.optionsbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8vh;
+    margin-top: 0px;
+    position: fixed;
+    z-index: 2;
+    top: 100px;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    width: 30%;
+    height: 8vh;
+    border-radius: 30px;
+   
+    
+}
+.options a{
+
+
+    margin: 20px;
+    color: rgb(174, 168, 168);
+    
+}
+.options a:hover{
+    color: white;
+    cursor: pointer;
+}
+.bgi{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.bg{
+   
+    width: 95%;
+    margin-top: 180px;
+    height: 70vh;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(5, 5, 5, 0));
+   
+}
+.overlay{
+    margin-top: 10px;
+    position:absolute;
+    width: 95%;
+    height: 70vh;
+    margin-left: 10px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.bgimg{
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 100%;
+    height: 70vh;
+    
+    
+}
+.head{
+    text-align: center;
+  padding-top: 190px;
+    font-size: 30px;
+    position: absolute;
+    color: white;
+}
+.box1{
+    text-align: center;
+    width: 100%;
+   font-size: 10px;
+    margin-top: 40px;
+    color: rgb(148, 133, 133);
+}
+.mail{
+    margin-top: 20px;
+}
+.mail input{
+    width: 343.3px;
+    height: 56px;
+border-radius: 30px;
+padding: 20px;
+font-size: 15px;
+background: transparent;
+border: 1px solid grey;
+}
+.mail button{
+    border: none;
+padding: 0px;
+width: 228px;
+height: 56px;
+border-radius: 30px;
+font-size: 20px;
+color: white;
+background: rgb(229, 9, 20);
+}
+.mail button:hover{
+    background-color:rgb(175, 8, 16); 
+    cursor: pointer;
+}
+.mail button,.mail input{
+    margin-left: 10px;
+}
+.box2{
+    margin-top: 100px;
+    width: 81%;
+    height: 50vh;
+    margin-left: 130px;
+}
+.box2 h3,.box3 h3,.box4 h3,.box5 h3{
+    font-size: 30px;
+    color: white;
+}
+.movies{
+    margin-top: 20px;
+    height:257px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.movies img{
+    width: 184px;
+    height:100% ;
+    border-radius: 30px;
+}
+.movies img:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+.carousel{
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    gap: 10px; 
+}
+.prev{
+    position: absolute;
+    visibility: hidden;
+    left: 130px;
+}
+.next{
+    position: absolute;
+    right: 160px;
+}
+.next,.prev{
+        background: rgba(15, 14, 14, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 80px;
+        margin-left: 5px;
+        font-size: 18px;
+        border-radius: 40px;
+}
+.next:hover,.prev:hover{
+    cursor: pointer;
+    background-color: rgba(15, 14, 14, 0.7) ;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.box3{
+    margin-top: 100px;
+    width: 81%;
+    height: 40vh;
+    margin-left: 130px;
+}
+.plan{
+    margin-top: 20px;
+    height:280px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+   
+}
+.plan1,.plan2,.plan3,.plan4{
+    border-radius: 20px;
+    margin: 5px;
+    width: 280px;
+    height: 260px;
+}
+.plan1{
+    background: linear-gradient(to bottom right, rgb(33, 50, 105) , rgb(0, 3, 14));
+    color: rgba(252, 249, 249, 0.6);
+   padding-left: 20px;
+   padding-top: 20px; 
+   align-items: center;
+   
+}
+.plan2{
+    background: linear-gradient(to bottom right, rgb(33, 50, 105) , rgb(0, 3, 14));
+    color: rgba(252, 249, 249, 0.5);
+   padding-left: 20px;
+   padding-top: 20px; 
+   align-items: center;
+}
+.plan3{
+    background: linear-gradient(to bottom right, rgb(70, 7, 83) , rgb(2, 16, 61));
+    color: rgba(252, 249, 249, 0.5);
+   padding-left: 20px;
+   padding-top: 20px; 
+   align-items: center;
+}
+.plan4{
+    background: linear-gradient(to bottom right, rgb(128, 25, 76) , rgb(2, 16, 61));
+    color: rgba(252, 249, 249, 0.5);
+   padding-left: 20px;
+   padding-top: 20px; 
+   align-items: center;
+}
+.plan1:hover,.plan2:hover{
+    background: linear-gradient(to bottom right, rgb(16, 47, 147) , rgb(0, 3, 14));
+   transition-duration: 1s;
+}
+.plan3:hover{
+    background: linear-gradient(to bottom right, rgb(114, 31, 131) , rgb(2, 16, 61));
+}
+.plan4:hover{
+    background: linear-gradient(to bottom right, rgb(174, 45, 110) , rgb(2, 16, 61));
+}
+.point1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.point2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    z-index: 0;
+}
+.point3{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    z-index: 0;
+}
+.plan ul{
+   padding-top: 20px;
+   font-size: 14px;
+}
+.p,.rate{
+    font-size:1.125rem;
+}
+.rate{
+    padding-top: 80px;
+}
+.mostp{
+    position: absolute;
+    left: 604px;
+   margin-top: -19px;
+   color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    z-index: 1;
+    border-top-right-radius:0.7rem ;
+}
+.rate1{
+    font-size:1.125rem;
+    padding-top: 55px;
+}
+.box4{
+        margin-top: 100px;
+        width: 81%;
+        height: 40vh;
+        margin-left: 130px;
+    }
+ .reasons{
+        margin-top: 20px;
+        height:180px ;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+       
+}
+.reasons div{
+    background-color: rgb(58, 56, 56);
+    width: 280px;
+    height: 140px;
+    border-radius: 20px;
+   margin: 15px;
+   text-align: center;
+   font-size: 11px;
+   padding-top: 15px;
+}
+.reasons svg{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.box5{
+    margin-top: 50px;
+    width: 81%;
+    margin-left: 130px;
+}
+.box5 div{
+    margin: 10px;
+}
+.q1 {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(62, 58, 58);
+    width: 98%;
+    border-radius: 15px;
+    height: 80px;
+    display: flex; /* Align the icon and text properly */
+    justify-content: space-between; /* Space between question and icon */
+    align-items: center; /* Center-align icon and text vertically */
+    cursor: pointer; /* Indicate clickability */
+}
+.q1:hover{
+    background-color: rgb(82, 78, 78);
+}
+.q1 .icon {
+    transition: transform 0.3s ease; /* Smooth rotation effect */
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.ans {
+    border-radius: 15px;
+    background-color: rgb(58, 56, 56);
+    max-height: 0;
+    width: 96%;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 16px;
+    color: #ccc;
+    padding-left: 10px;
+}
+
+.item.active .ans {
+    max-height: 300px; /* Adjust based on your content's height */
+    padding: 10px 15px;
+}
+
+.item.active .q1 .icon {
+    transform: rotate(180deg);
+}
+
+.box6{
+        text-align: center;
+        width: 100%;
+       font-size: 10px;
+        margin-top: 40px;
+        color: rgb(255, 254, 254);
+       padding: 10px;
+       
+       
+
+    }
+    .box6 h2{
+        margin-top: 10px;
+    }
+.getstarted button{
+    padding: 0px;
+width: 228px;
+height: 56px;
+border:none;
+border-radius: 30px;
+font-size: 20px;
+color: white;
+background: rgb(229, 9, 20);
+}
+
+.getstarted button:hover{
+    background-color:rgb(175, 8, 16); 
+    cursor: pointer;
+}
+.box7{
+    margin-top: 100px;
+    color: rgba(253, 252, 252,0.7);
+    font-size: 10px;
+    margin-left: 0px;
+}
+.box7 h2{
+ margin-left: 150px;
+}
+.box7 ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+.bottom1,.bottom2,.bottom3,.bottom4{
+    margin: 10px;
+    margin-left: 150px;
+}
+.box7 a{
+text-decoration:underline;
+cursor: pointer;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
+.box8{
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    margin-left: 130px;
+}
+.sym svg{
+    position: absolute;
+    pointer-events: none;
+    width: 16px;
+    left: 150px;
+    height: 16px;
+    z-index: 5;
+    color: white;
+    margin-top: 37px;
+}
+.selects{
+    position: absolute;
+    z-index: 0;
+    margin-top: 30px;
+   
+}
+.selects select{
+    
+    width: 123.6px;
+    height: 32px;
+    border-radius: 20px;
+    Display: block;
+  margin-left: 10px;
+    text-align: center;
+    background: transparent;
+    color: white; 
+}
+.last{
+    color: rgba(253, 252, 252,0.7);
+    margin-left: 150px;
+}
+    @media only screen and (max-width: 800px) {
+        body {
+            background: linear-gradient(to top, rgb(30, 30, 30), rgb(55, 16, 16));
+        }
+    
+        .navibar {
+          margin-top: -130px;
+            height: 64px;
+            margin-left: 10px;
+        }
+        .overlay1{
+            margin-top: -130px;
+            overflow: hidden;
+            background: linear-gradient(to bottom, rgb(23, 23, 23) , rgb(56, 18, 20));
+            position: absolute;
+            height: 64px;
+            width: 120vh;
+        }
+        .netflixbox {
+            height: 30px;
+            width: auto;
+        }
+    
+        .logo svg {
+            width: 100px;
+            height: 30px;
+        }
+    
+        .signinbox {
+            width: auto;
+        }
+    
+        .select select {
+            width: 100px;
+            height: 28px;
+            font-size: 12px;
+            margin-top: -5px;
+            padding-left: 15px;
+        }
+    
+        .signupbtn {
+            width: 70px;
+            height: 30px;
+            font-size: 14px;
+            top: 20px;
+            right: 20px;
+        }
+    
+        .optionsbar {
+            height: 6vh;
+            top: 70px;
+            width: 100%;
+            margin-top: 30px;
+        }
+    
+        .options {
+            width: 60%;
+            height: 6vh;
+        }
+    
+        .bg {
+            width: 100%;
+            height: 50vh;
+            
+            
+        }
+        .langsym svg{
+            position: absolute;
+            right: 227px;
+            top:30px ;
+            pointer-events: none;
+            width: 16px;
+            height: 16px;
+            z-index: 3;
+            color: white;
+        }
+        .bgi{
+            width: 100vh;
+            margin-top: 130px;
+            height: 50vh;
+            margin-left: 30px;
+        }
+        .overlay{
+            margin-top: 10px;
+            position:absolute;
+            width: 100vh;
+            height: 50vh;
+            margin-left: 10px;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+        .bgimg{
+            border-radius: 20px;
+            border: 2px solid white;
+            width: 100%;
+            height: 50vh;
+            padding-top: -350px;
+        }
+        
+    
+        .box1 {
+            width: 100vh;
+            font-size: 8px;
+        margin-top: 140px;
+        margin-left: 50px;
+        }
+        .mail input {
+            width: 260px;
+            font-size: 12px;
+        }
+    
+        .mail button {
+            width: 180px;
+            font-size: 16px;
+        }
+    
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+
+            width: 100vh;
+            margin-left: 30px;
+        }
+        .prev{
+            position: absolute;
+            visibility: hidden;
+            left: 130px;
+        }
+        .next{
+            position: static;
+            
+        }
+       
+        .movies img {
+            width: 140px;
+            height: auto;
+        }
+    
+        .plan {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: auto;
+
+        }
+    
+        .plan1,
+        .plan2,
+        .plan3,
+        .plan4 {
+            width: 90%;
+            height: 50%;
+            padding: 15px;
+        }
+        .box4{
+
+            margin-top: 160vh;
+            
+        }
+       .reasons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        
+       }
+        .reasons div {
+            height: auto;
+            margin: 10px;
+        }
+        .box5{
+            margin-top: 85vh;
+        }
+        .q1 {
+            font-size: 16px;
+            height: 60px;
+        }
+    
+        .ans {
+            font-size: 14px;
+        }
+        .box6{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120vh;
+        }
+        .box6 h2 {
+            font-size: 14px;
+        }
+        .box7 h2{
+            font-size: 20px;
+            
+        }
+        .box7 ul li {
+            font-size: 20px;
+        }
+        .box7{
+            justify-content: left;
+            margin-left: 0px;
+        }
+        .mostp{
+            width: 100px;
+            position: absolute;
+            left: 538px;
+           margin-top: -17px;
+           color: white;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+           border-top-right-radius:0.7rem ;
+            z-index: 1;
+        }
+        
+        
+        
+        .bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: left;
+        }
+    
+        .last {
+            margin-left: 10px;
+        }
+    }
+    
